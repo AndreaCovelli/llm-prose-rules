@@ -1,0 +1,48 @@
+---
+extends: existence
+message: "LLM-style vocabulary: '%s'. Use it only when it is the precise word."
+level: warning
+tokens:
+  - delve
+  - delves
+  - delving
+  - tapestry
+  - realm
+  - paradigm
+  - intricate
+  - intricacies
+  - showcasing
+  - showcase
+  - crucial
+  - pivotal
+  - meticulously
+  - vibrant
+  - unparalleled
+  - underscore
+  - underscores
+  - underscoring
+  - leverage
+  - synergy
+  - innovative
+  - groundbreaking
+  - holistic
+  - transformative
+  - seamless
+  - seamlessly
+  - robust
+  - streamline
+  - streamlines
+  - streamlining
+  - frictionless
+  - elevate
+  - elevates
+  - elevating
+  - data-driven
+  - insightful
+  - proactive
+  - unprecedented
+  - supercharge
+  - democratize
+  - enduring
+  - interplay
+

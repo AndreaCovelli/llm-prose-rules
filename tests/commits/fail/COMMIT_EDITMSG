@@ -1,0 +1,12 @@
+This commit adds comprehensive tests
+
+This commit updates the configuration, ensuring consistency.
+
+## Added
+
+- styles/prose-harness/OpeningCliches.yml
+- styles/prose-harness/FillerPhrases.yml
+- styles/prose-harness/ConclusionMarkers.yml
+
+All tests pass.
+

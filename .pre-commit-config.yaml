@@ -1,0 +1,18 @@
+default_install_hook_types: [pre-commit, commit-msg]
+
+repos:
+  - repo: https://github.com/errata-ai/vale
+    rev: v3.15.1
+    hooks:
+      - id: vale
+        alias: vale-prose
+        name: vale prose
+        stages: [pre-commit]
+        args: [--config=.vale.ini, --minAlertLevel=error]
+        exclude: ^tests/
+      - id: vale
+        alias: vale-commit-message
+        name: vale commit message
+        stages: [commit-msg]
+        args: [--config=.vale.ini, --ext=.md, --minAlertLevel=error]
+

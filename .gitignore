@@ -1,0 +1,4 @@
+.cache/
+.vale/
+.pre-commit-cache/
+
