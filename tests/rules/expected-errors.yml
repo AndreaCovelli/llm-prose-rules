@@ -1,0 +1,42 @@
+tests/rules/prose-errors/ClosingPleasantries.md:
+  - prose-harness.ClosingPleasantries
+tests/rules/prose-errors/ConclusionMarkers.md:
+  - prose-harness.ConclusionMarkers
+tests/rules/prose-errors/ContrastiveFormulas.md:
+  - prose-harness.ContrastiveFormulas
+tests/rules/prose-errors/FillerPhrases.md:
+  - prose-harness.FillerPhrases
+tests/rules/prose-errors/ListIntroductions.md:
+  - prose-harness.ListIntroductions
+tests/rules/prose-errors/Metacommentary.md:
+  - prose-harness.Metacommentary
+tests/rules/prose-errors/OpeningCliches.md:
+  - prose-harness.OpeningCliches
+tests/rules/prose-errors/ParticipialPadding.md:
+  - prose-harness.ParticipialPadding
+tests/rules/prose-errors/ServesAsDodge.md:
+  - prose-harness.ServesAsDodge
+tests/rules/prose-errors/StructureAnnouncements.md:
+  - prose-harness.StructureAnnouncements
+tests/rules/prose-errors/SycophancyMarkers.md:
+  - prose-harness.SycophancyMarkers
+tests/rules/prose-errors/UnpackExplore.md:
+  - prose-harness.UnpackExplore
+tests/rules/prose-errors/VagueAttributions.md:
+  - prose-harness.VagueAttributions
+tests/rules/commit-errors/CommitAttribution.md:
+  - prose-harness-commits.CommitAttribution
+tests/rules/commit-errors/CommitBuzzwords.md:
+  - prose-harness-commits.CommitBuzzwords
+tests/rules/commit-errors/CommitChangelogStyle.md:
+  - prose-harness-commits.CommitChangelogStyle
+tests/rules/commit-errors/CommitOverexplanation.md:
+  - prose-harness-commits.CommitOverexplanation
+tests/rules/commit-errors/CommitPastTense.md:
+  - prose-harness-commits.CommitPastTense
+tests/rules/commit-errors/CommitSelfReference.md:
+  - prose-harness-commits.CommitSelfReference
+tests/rules/commit-errors/CommitTestEnumeration.md:
+  - prose-harness-commits.CommitTestEnumeration
+tests/rules/commit-errors/CommitTrailingJustification.md:
+  - prose-harness-commits.CommitTrailingJustification

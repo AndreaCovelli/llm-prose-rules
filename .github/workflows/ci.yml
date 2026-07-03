@@ -1,0 +1,49 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install Vale
+        run: |
+          curl -L https://github.com/errata-ai/vale/releases/download/v3.15.1/vale_3.15.1_Linux_64-bit.tar.gz -o vale.tar.gz
+          tar -xzf vale.tar.gz vale
+          sudo install vale /usr/local/bin/vale
+
+      - name: Install dependencies
+        run: |
+          python3 -m pip install --upgrade pip
+          python3 -m pip install -r requirements-dev.txt pre-commit
+          sudo apt-get update
+          sudo apt-get install -y shellcheck
+
+      - name: Run test harness
+        run: ./scripts/test.sh
+
+      - name: Check rule fixtures
+        run: python3 scripts/check-rule-fixtures.py
+
+      - name: Check rule metadata
+        run: python3 scripts/check-metadata.py
+
+      - name: Run shellcheck
+        run: shellcheck scripts/*.sh
+
+      - name: Run pre-commit
+        run: pre-commit run --all-files
+
+      - name: Run Vale
+        run: vale --config=.vale.ini .
