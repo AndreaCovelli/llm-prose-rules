@@ -19,7 +19,7 @@ The default config enables `llm-prose-rules` and `voice-dna` for Markdown. Commi
 ## Install hooks
 
 ```bash
-pre-commit install --hook-type pre-commit --hook-type commit-msg
+uv run pre-commit install --hook-type pre-commit --hook-type commit-msg
 ```
 
 The pre-commit config runs Vale at `error` level, so warnings do not block commits.
@@ -27,9 +27,9 @@ The pre-commit config runs Vale at `error` level, so warnings do not block commi
 ## Run checks
 
 ```bash
-./scripts/test.sh
-python3 scripts/check-rule-fixtures.py
-python3 scripts/check-metadata.py
+uv run ./scripts/test.sh
+uv run python scripts/check-rule-fixtures.py
+uv run python scripts/check-metadata.py
 vale --config=.vale-messages.ini styles/llm-prose-rules styles/llm-prose-rules-commits styles/llm-prose-rules-experimental styles/voice-dna
 vale --config=.vale.ini .
 vale --config=.vale.ini --ext=.md --minAlertLevel=error .git/COMMIT_EDITMSG

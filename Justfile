@@ -3,7 +3,7 @@ set positional-arguments := true
 default: test
 
 test:
-  ./scripts/test.sh
+  uv run ./scripts/test.sh
 
 vale-prose:
   vale --config=.vale.ini --minAlertLevel=error .
@@ -16,4 +16,4 @@ vale-rule-messages:
   vale --config=.vale-messages.ini styles/llm-prose-rules styles/llm-prose-rules-commits styles/llm-prose-rules-experimental styles/voice-dna
 
 pre-commit-install:
-  pre-commit install --hook-type pre-commit --hook-type commit-msg
+  uv run pre-commit install --hook-type pre-commit --hook-type commit-msg

@@ -20,8 +20,10 @@ fi
 
 vale --config=.vale-messages.ini styles/llm-prose-rules styles/llm-prose-rules-commits styles/llm-prose-rules-experimental styles/voice-dna
 
-if command -v pre-commit >/dev/null 2>&1 && pre-commit --version >/dev/null 2>&1; then
+if command -v uv >/dev/null 2>&1 && uv --version >/dev/null 2>&1; then
+  uv run pre-commit run --all-files
+elif command -v pre-commit >/dev/null 2>&1 && pre-commit --version >/dev/null 2>&1; then
   pre-commit run --all-files
 else
-  echo "Skipping pre-commit check: pre-commit is not installed or not configured."
+  echo "Skipping pre-commit check: uv and pre-commit are not installed or not configured."
 fi
