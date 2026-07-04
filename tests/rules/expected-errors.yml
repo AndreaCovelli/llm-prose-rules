@@ -1,42 +1,44 @@
 tests/rules/prose-errors/ClosingPleasantries.md:
-  - prose-harness.ClosingPleasantries
+  - llm-prose-rules.ClosingPleasantries
 tests/rules/prose-errors/ConclusionMarkers.md:
-  - prose-harness.ConclusionMarkers
+  - llm-prose-rules.ConclusionMarkers
 tests/rules/prose-errors/ContrastiveFormulas.md:
-  - prose-harness.ContrastiveFormulas
+  - llm-prose-rules.ContrastiveFormulas
 tests/rules/prose-errors/FillerPhrases.md:
-  - prose-harness.FillerPhrases
+  - llm-prose-rules.FillerPhrases
 tests/rules/prose-errors/ListIntroductions.md:
-  - prose-harness.ListIntroductions
+  - llm-prose-rules.ListIntroductions
 tests/rules/prose-errors/Metacommentary.md:
-  - prose-harness.Metacommentary
+  - llm-prose-rules.Metacommentary
 tests/rules/prose-errors/OpeningCliches.md:
-  - prose-harness.OpeningCliches
+  - llm-prose-rules.OpeningCliches
 tests/rules/prose-errors/ParticipialPadding.md:
-  - prose-harness.ParticipialPadding
+  - llm-prose-rules.ParticipialPadding
 tests/rules/prose-errors/ServesAsDodge.md:
-  - prose-harness.ServesAsDodge
+  - llm-prose-rules.ServesAsDodge
 tests/rules/prose-errors/StructureAnnouncements.md:
-  - prose-harness.StructureAnnouncements
+  - llm-prose-rules.StructureAnnouncements
 tests/rules/prose-errors/SycophancyMarkers.md:
-  - prose-harness.SycophancyMarkers
+  - llm-prose-rules.SycophancyMarkers
 tests/rules/prose-errors/UnpackExplore.md:
-  - prose-harness.UnpackExplore
+  - llm-prose-rules.UnpackExplore
 tests/rules/prose-errors/VagueAttributions.md:
-  - prose-harness.VagueAttributions
+  - llm-prose-rules.VagueAttributions
 tests/rules/commit-errors/CommitAttribution.md:
-  - prose-harness-commits.CommitAttribution
+  - llm-prose-rules-commits.CommitAttribution
 tests/rules/commit-errors/CommitBuzzwords.md:
-  - prose-harness-commits.CommitBuzzwords
+  - llm-prose-rules-commits.CommitBuzzwords
 tests/rules/commit-errors/CommitChangelogStyle.md:
-  - prose-harness-commits.CommitChangelogStyle
+  - llm-prose-rules-commits.CommitChangelogStyle
+tests/rules/commit-errors/CommitHedging.md:
+  - llm-prose-rules-commits.CommitHedging
 tests/rules/commit-errors/CommitOverexplanation.md:
-  - prose-harness-commits.CommitOverexplanation
+  - llm-prose-rules-commits.CommitOverexplanation
 tests/rules/commit-errors/CommitPastTense.md:
-  - prose-harness-commits.CommitPastTense
+  - llm-prose-rules-commits.CommitPastTense
 tests/rules/commit-errors/CommitSelfReference.md:
-  - prose-harness-commits.CommitSelfReference
+  - llm-prose-rules-commits.CommitSelfReference
 tests/rules/commit-errors/CommitTestEnumeration.md:
-  - prose-harness-commits.CommitTestEnumeration
+  - llm-prose-rules-commits.CommitTestEnumeration
 tests/rules/commit-errors/CommitTrailingJustification.md:
-  - prose-harness-commits.CommitTrailingJustification
+  - llm-prose-rules-commits.CommitTrailingJustification

@@ -1,5 +1,5 @@
 rules:
-  - path: styles/prose-harness/ClosingPleasantries.yml
+  - path: styles/llm-prose-rules/ClosingPleasantries.yml
     level: 'error'
     category: 'prose'
     confidence: 'high'
@@ -8,7 +8,7 @@ rules:
     source: 'Maintainer calibration from recurring LLM-assisted prose cleanup patterns.'
     last_reviewed: '2026-07-03'
     rationale: 'Blocking prose rule for the ClosingPleasantries pattern; fixture coverage keeps the high-confidence tell from drifting into unrelated text.'
-  - path: styles/prose-harness/ConclusionMarkers.yml
+  - path: styles/llm-prose-rules/ConclusionMarkers.yml
     level: 'error'
     category: 'prose'
     confidence: 'high'
@@ -17,7 +17,7 @@ rules:
     source: 'Maintainer calibration from recurring LLM-assisted prose cleanup patterns.'
     last_reviewed: '2026-07-03'
     rationale: 'Blocking prose rule for the ConclusionMarkers pattern; fixture coverage keeps the high-confidence tell from drifting into unrelated text.'
-  - path: styles/prose-harness/ContrastiveFormulas.yml
+  - path: styles/llm-prose-rules/ContrastiveFormulas.yml
     level: 'error'
     category: 'prose'
     confidence: 'high'
@@ -26,7 +26,7 @@ rules:
     source: 'Maintainer calibration from recurring LLM-assisted prose cleanup patterns.'
     last_reviewed: '2026-07-03'
     rationale: 'Blocking prose rule for the ContrastiveFormulas pattern; fixture coverage keeps the high-confidence tell from drifting into unrelated text.'
-  - path: styles/prose-harness/FillerPhrases.yml
+  - path: styles/llm-prose-rules/FillerPhrases.yml
     level: 'error'
     category: 'prose'
     confidence: 'high'
@@ -35,7 +35,7 @@ rules:
     source: 'Maintainer calibration from recurring LLM-assisted prose cleanup patterns.'
     last_reviewed: '2026-07-03'
     rationale: 'Blocking prose rule for the FillerPhrases pattern; fixture coverage keeps the high-confidence tell from drifting into unrelated text.'
-  - path: styles/prose-harness/ListIntroductions.yml
+  - path: styles/llm-prose-rules/ListIntroductions.yml
     level: 'error'
     category: 'prose'
     confidence: 'high'
@@ -44,7 +44,7 @@ rules:
     source: 'Maintainer calibration from recurring LLM-assisted prose cleanup patterns.'
     last_reviewed: '2026-07-03'
     rationale: 'Blocking prose rule for the ListIntroductions pattern; fixture coverage keeps the high-confidence tell from drifting into unrelated text.'
-  - path: styles/prose-harness/Metacommentary.yml
+  - path: styles/llm-prose-rules/Metacommentary.yml
     level: 'error'
     category: 'prose'
     confidence: 'high'
@@ -53,7 +53,7 @@ rules:
     source: 'Maintainer calibration from recurring LLM-assisted prose cleanup patterns.'
     last_reviewed: '2026-07-03'
     rationale: 'Blocking prose rule for the Metacommentary pattern; fixture coverage keeps the high-confidence tell from drifting into unrelated text.'
-  - path: styles/prose-harness/OpeningCliches.yml
+  - path: styles/llm-prose-rules/OpeningCliches.yml
     level: 'error'
     category: 'prose'
     confidence: 'high'
@@ -62,7 +62,7 @@ rules:
     source: 'Maintainer calibration from recurring LLM-assisted prose cleanup patterns.'
     last_reviewed: '2026-07-03'
     rationale: 'Blocking prose rule for the OpeningCliches pattern; fixture coverage keeps the high-confidence tell from drifting into unrelated text.'
-  - path: styles/prose-harness/ParticipialPadding.yml
+  - path: styles/llm-prose-rules/ParticipialPadding.yml
     level: 'error'
     category: 'prose'
     confidence: 'high'
@@ -71,7 +71,7 @@ rules:
     source: 'Maintainer calibration from recurring LLM-assisted prose cleanup patterns.'
     last_reviewed: '2026-07-03'
     rationale: 'Blocking prose rule for the ParticipialPadding pattern; fixture coverage keeps the high-confidence tell from drifting into unrelated text.'
-  - path: styles/prose-harness/ServesAsDodge.yml
+  - path: styles/llm-prose-rules/ServesAsDodge.yml
     level: 'error'
     category: 'prose'
     confidence: 'high'
@@ -80,7 +80,7 @@ rules:
     source: 'Maintainer calibration from recurring LLM-assisted prose cleanup patterns.'
     last_reviewed: '2026-07-03'
     rationale: 'Blocking prose rule for the ServesAsDodge pattern; fixture coverage keeps the high-confidence tell from drifting into unrelated text.'
-  - path: styles/prose-harness/StructureAnnouncements.yml
+  - path: styles/llm-prose-rules/StructureAnnouncements.yml
     level: 'error'
     category: 'prose'
     confidence: 'high'
@@ -89,7 +89,7 @@ rules:
     source: 'Maintainer calibration from recurring LLM-assisted prose cleanup patterns.'
     last_reviewed: '2026-07-03'
     rationale: 'Blocking prose rule for the StructureAnnouncements pattern; fixture coverage keeps the high-confidence tell from drifting into unrelated text.'
-  - path: styles/prose-harness/SycophancyMarkers.yml
+  - path: styles/llm-prose-rules/SycophancyMarkers.yml
     level: 'error'
     category: 'prose'
     confidence: 'high'
@@ -98,7 +98,7 @@ rules:
     source: 'Maintainer calibration from recurring LLM-assisted prose cleanup patterns.'
     last_reviewed: '2026-07-03'
     rationale: 'Blocking prose rule for the SycophancyMarkers pattern; fixture coverage keeps the high-confidence tell from drifting into unrelated text.'
-  - path: styles/prose-harness/UnpackExplore.yml
+  - path: styles/llm-prose-rules/UnpackExplore.yml
     level: 'error'
     category: 'prose'
     confidence: 'high'
@@ -107,7 +107,7 @@ rules:
     source: 'Maintainer calibration from recurring LLM-assisted prose cleanup patterns.'
     last_reviewed: '2026-07-03'
     rationale: 'Blocking prose rule for the UnpackExplore pattern; fixture coverage keeps the high-confidence tell from drifting into unrelated text.'
-  - path: styles/prose-harness/VagueAttributions.yml
+  - path: styles/llm-prose-rules/VagueAttributions.yml
     level: 'error'
     category: 'prose'
     confidence: 'high'
@@ -116,7 +116,7 @@ rules:
     source: 'Maintainer calibration from recurring LLM-assisted prose cleanup patterns.'
     last_reviewed: '2026-07-03'
     rationale: 'Blocking prose rule for the VagueAttributions pattern; fixture coverage keeps the high-confidence tell from drifting into unrelated text.'
-  - path: styles/prose-harness-commits/CommitAttribution.yml
+  - path: styles/llm-prose-rules-commits/CommitAttribution.yml
     level: 'error'
     category: 'commit'
     confidence: 'high'
@@ -125,7 +125,7 @@ rules:
     source: 'Maintainer calibration from commit-message hygiene conventions and project commit review.'
     last_reviewed: '2026-07-03'
     rationale: 'Commit-message rule for CommitAttribution; blocking entries target boilerplate while warning entries stay advisory because commit style depends on context.'
-  - path: styles/prose-harness-commits/CommitBuzzwords.yml
+  - path: styles/llm-prose-rules-commits/CommitBuzzwords.yml
     level: 'error'
     category: 'commit'
     confidence: 'high'
@@ -134,7 +134,7 @@ rules:
     source: 'Maintainer calibration from commit-message hygiene conventions and project commit review.'
     last_reviewed: '2026-07-03'
     rationale: 'Commit-message rule for CommitBuzzwords; blocking entries target boilerplate while warning entries stay advisory because commit style depends on context.'
-  - path: styles/prose-harness-commits/CommitChangelogStyle.yml
+  - path: styles/llm-prose-rules-commits/CommitChangelogStyle.yml
     level: 'error'
     category: 'commit'
     confidence: 'high'
@@ -143,7 +143,16 @@ rules:
     source: 'Maintainer calibration from commit-message hygiene conventions and project commit review.'
     last_reviewed: '2026-07-03'
     rationale: 'Commit-message rule for CommitChangelogStyle; blocking entries target boilerplate while warning entries stay advisory because commit style depends on context.'
-  - path: styles/prose-harness-commits/CommitEmoji.yml
+  - path: styles/llm-prose-rules-commits/CommitHedging.yml
+    level: 'error'
+    category: 'commit'
+    confidence: 'high'
+    false_positive_risk: 'medium'
+    drift_risk: 'low'
+    source: 'Adapted from vale-ai-tells after review against commit-message hygiene conventions.'
+    last_reviewed: '2026-07-04'
+    rationale: 'Blocking commit-message rule for uncertainty after the change is made; writers can replace hedges with the actual change or test evidence.'
+  - path: styles/llm-prose-rules-commits/CommitEmoji.yml
     level: 'warning'
     category: 'commit'
     confidence: 'medium'
@@ -152,7 +161,7 @@ rules:
     source: 'Maintainer calibration from commit-message hygiene conventions and project commit review.'
     last_reviewed: '2026-07-03'
     rationale: 'Commit-message rule for CommitEmoji; blocking entries target boilerplate while warning entries stay advisory because commit style depends on context.'
-  - path: styles/prose-harness-commits/CommitFileListing.yml
+  - path: styles/llm-prose-rules-commits/CommitFileListing.yml
     level: 'warning'
     category: 'commit'
     confidence: 'medium'
@@ -161,7 +170,7 @@ rules:
     source: 'Maintainer calibration from commit-message hygiene conventions and project commit review.'
     last_reviewed: '2026-07-03'
     rationale: 'Commit-message rule for CommitFileListing; blocking entries target boilerplate while warning entries stay advisory because commit style depends on context.'
-  - path: styles/prose-harness-commits/CommitMarketingAdjectives.yml
+  - path: styles/llm-prose-rules-commits/CommitMarketingAdjectives.yml
     level: 'warning'
     category: 'commit'
     confidence: 'medium'
@@ -170,7 +179,7 @@ rules:
     source: 'Maintainer calibration from commit-message hygiene conventions and project commit review.'
     last_reviewed: '2026-07-03'
     rationale: 'Commit-message rule for CommitMarketingAdjectives; blocking entries target boilerplate while warning entries stay advisory because commit style depends on context.'
-  - path: styles/prose-harness-commits/CommitOverexplanation.yml
+  - path: styles/llm-prose-rules-commits/CommitOverexplanation.yml
     level: 'error'
     category: 'commit'
     confidence: 'high'
@@ -179,7 +188,7 @@ rules:
     source: 'Maintainer calibration from commit-message hygiene conventions and project commit review.'
     last_reviewed: '2026-07-03'
     rationale: 'Commit-message rule for CommitOverexplanation; blocking entries target boilerplate while warning entries stay advisory because commit style depends on context.'
-  - path: styles/prose-harness-commits/CommitPastTense.yml
+  - path: styles/llm-prose-rules-commits/CommitPastTense.yml
     level: 'error'
     category: 'commit'
     confidence: 'high'
@@ -188,7 +197,7 @@ rules:
     source: 'Maintainer calibration from commit-message hygiene conventions and project commit review.'
     last_reviewed: '2026-07-03'
     rationale: 'Commit-message rule for CommitPastTense; blocking entries target boilerplate while warning entries stay advisory because commit style depends on context.'
-  - path: styles/prose-harness-commits/CommitSelfReference.yml
+  - path: styles/llm-prose-rules-commits/CommitSelfReference.yml
     level: 'error'
     category: 'commit'
     confidence: 'high'
@@ -197,7 +206,7 @@ rules:
     source: 'Maintainer calibration from commit-message hygiene conventions and project commit review.'
     last_reviewed: '2026-07-03'
     rationale: 'Commit-message rule for CommitSelfReference; blocking entries target boilerplate while warning entries stay advisory because commit style depends on context.'
-  - path: styles/prose-harness-commits/CommitTestEnumeration.yml
+  - path: styles/llm-prose-rules-commits/CommitTestEnumeration.yml
     level: 'error'
     category: 'commit'
     confidence: 'high'
@@ -206,7 +215,7 @@ rules:
     source: 'Maintainer calibration from commit-message hygiene conventions and project commit review.'
     last_reviewed: '2026-07-03'
     rationale: 'Commit-message rule for CommitTestEnumeration; blocking entries target boilerplate while warning entries stay advisory because commit style depends on context.'
-  - path: styles/prose-harness-commits/CommitTrailingJustification.yml
+  - path: styles/llm-prose-rules-commits/CommitTrailingJustification.yml
     level: 'error'
     category: 'commit'
     confidence: 'high'
@@ -215,7 +224,7 @@ rules:
     source: 'Maintainer calibration from commit-message hygiene conventions and project commit review.'
     last_reviewed: '2026-07-03'
     rationale: 'Commit-message rule for CommitTrailingJustification; blocking entries target boilerplate while warning entries stay advisory because commit style depends on context.'
-  - path: styles/prose-harness-commits/CommitUnquantifiedClaims.yml
+  - path: styles/llm-prose-rules-commits/CommitUnquantifiedClaims.yml
     level: 'warning'
     category: 'commit'
     confidence: 'medium'
@@ -224,7 +233,7 @@ rules:
     source: 'Maintainer calibration from commit-message hygiene conventions and project commit review.'
     last_reviewed: '2026-07-03'
     rationale: 'Commit-message rule for CommitUnquantifiedClaims; blocking entries target boilerplate while warning entries stay advisory because commit style depends on context.'
-  - path: styles/prose-harness-experimental/ContentDuplication.yml
+  - path: styles/llm-prose-rules-experimental/ContentDuplication.yml
     level: 'warning'
     category: 'experimental'
     confidence: 'medium'
@@ -233,7 +242,7 @@ rules:
     source: 'Experimental structural heuristics maintained through corpus review.'
     last_reviewed: '2026-07-03'
     rationale: 'Experimental structural rule for ContentDuplication; opt-in only while thresholds and corpus behavior are calibrated.'
-  - path: styles/prose-harness-experimental/ParagraphLengthVariance.yml
+  - path: styles/llm-prose-rules-experimental/ParagraphLengthVariance.yml
     level: 'warning'
     category: 'experimental'
     confidence: 'medium'
@@ -242,7 +251,7 @@ rules:
     source: 'Experimental structural heuristics maintained through corpus review.'
     last_reviewed: '2026-07-03'
     rationale: 'Experimental structural rule for ParagraphLengthVariance; opt-in only while thresholds and corpus behavior are calibrated.'
-  - path: styles/prose-harness-experimental/SentenceLengthVariance.yml
+  - path: styles/llm-prose-rules-experimental/SentenceLengthVariance.yml
     level: 'warning'
     category: 'experimental'
     confidence: 'medium'
@@ -251,7 +260,7 @@ rules:
     source: 'Experimental structural heuristics maintained through corpus review.'
     last_reviewed: '2026-07-03'
     rationale: 'Experimental structural rule for SentenceLengthVariance; opt-in only while thresholds and corpus behavior are calibrated.'
-  - path: styles/prose-harness-experimental/SentenceStartEntropy.yml
+  - path: styles/llm-prose-rules-experimental/SentenceStartEntropy.yml
     level: 'warning'
     category: 'experimental'
     confidence: 'medium'
@@ -260,7 +269,7 @@ rules:
     source: 'Experimental structural heuristics maintained through corpus review.'
     last_reviewed: '2026-07-03'
     rationale: 'Experimental structural rule for SentenceStartEntropy; opt-in only while thresholds and corpus behavior are calibrated.'
-  - path: styles/prose-harness-experimental/SentenceStartRepetition.yml
+  - path: styles/llm-prose-rules-experimental/SentenceStartRepetition.yml
     level: 'warning'
     category: 'experimental'
     confidence: 'medium'
@@ -269,7 +278,7 @@ rules:
     source: 'Experimental structural heuristics maintained through corpus review.'
     last_reviewed: '2026-07-03'
     rationale: 'Experimental structural rule for SentenceStartRepetition; opt-in only while thresholds and corpus behavior are calibrated.'
-  - path: styles/prose-harness-experimental/TransitionRepetition.yml
+  - path: styles/llm-prose-rules-experimental/TransitionRepetition.yml
     level: 'warning'
     category: 'experimental'
     confidence: 'medium'
@@ -278,7 +287,7 @@ rules:
     source: 'Experimental structural heuristics maintained through corpus review.'
     last_reviewed: '2026-07-03'
     rationale: 'Experimental structural rule for TransitionRepetition; opt-in only while thresholds and corpus behavior are calibrated.'
-  - path: styles/prose-harness-experimental/TricolonDensityDocument.yml
+  - path: styles/llm-prose-rules-experimental/TricolonDensityDocument.yml
     level: 'warning'
     category: 'experimental'
     confidence: 'medium'

@@ -12,6 +12,8 @@ vale-commit-fixtures:
   vale --config=.vale-test.ini --ext=.md tests/commits/pass/COMMIT_EDITMSG
   ! vale --config=.vale-test.ini --ext=.md tests/commits/fail/COMMIT_EDITMSG
 
+vale-rule-messages:
+  vale --config=.vale-messages.ini styles/llm-prose-rules styles/llm-prose-rules-commits styles/llm-prose-rules-experimental styles/voice-dna
+
 pre-commit-install:
   pre-commit install --hook-type pre-commit --hook-type commit-msg
-

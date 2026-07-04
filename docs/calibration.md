@@ -1,6 +1,6 @@
 # Rule calibration
 
-`prose-harness` is a writing cleanup profile, not an authorship classifier.
+`llm-prose-rules` is a writing cleanup profile, not an authorship classifier.
 Rules should stay narrow enough that a writer can act on each alert without
 debating intent.
 

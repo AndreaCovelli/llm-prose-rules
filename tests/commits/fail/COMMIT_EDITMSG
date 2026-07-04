@@ -4,9 +4,10 @@ This commit updates the configuration, ensuring consistency.
 
 ## Added
 
-- styles/prose-harness/OpeningCliches.yml
-- styles/prose-harness/FillerPhrases.yml
-- styles/prose-harness/ConclusionMarkers.yml
+- styles/llm-prose-rules/OpeningCliches.yml
+- styles/llm-prose-rules/FillerPhrases.yml
+- styles/llm-prose-rules/ConclusionMarkers.yml
 
 All tests pass.
 
+This should fix the race condition.

@@ -1,6 +1,6 @@
-# prose-harness
+# llm-prose-rules
 
-`prose-harness` is a small Vale profile for cleaning up LLM-assisted prose and commit messages.
+`llm-prose-rules` is a small Vale profile for cleaning up LLM-assisted prose and commit messages.
 
 It is not an AI detector. It does not produce an authorship score. It flags patterns that often make generated writing vague, padded, or over-styled.
 
@@ -8,13 +8,13 @@ It is not an AI detector. It does not produce an authorship score. It flags patt
 
 ```text
 styles/
-  prose-harness/              # blocking prose cleanup rules
-  prose-harness-commits/      # blocking commit-message rules
-  voice-dna/                  # warning-level personal taste rules
-  prose-harness-experimental/ # opt-in structural checks
+  llm-prose-rules/              # blocking prose cleanup rules
+  llm-prose-rules-commits/      # blocking commit-message rules
+  voice-dna/                    # warning-level personal taste rules
+  llm-prose-rules-experimental/ # opt-in structural checks
 ```
 
-The default config enables `prose-harness` and `voice-dna` for Markdown. Commit messages use only `prose-harness-commits`.
+The default config enables `llm-prose-rules` and `voice-dna` for Markdown. Commit messages use only `llm-prose-rules-commits`.
 
 ## Install hooks
 
@@ -30,6 +30,7 @@ The pre-commit config runs Vale at `error` level, so warnings do not block commi
 ./scripts/test.sh
 python3 scripts/check-rule-fixtures.py
 python3 scripts/check-metadata.py
+vale --config=.vale-messages.ini styles/llm-prose-rules styles/llm-prose-rules-commits styles/llm-prose-rules-experimental styles/voice-dna
 vale --config=.vale.ini .
 vale --config=.vale.ini --ext=.md --minAlertLevel=error .git/COMMIT_EDITMSG
 ```

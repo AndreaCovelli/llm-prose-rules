@@ -18,6 +18,8 @@ if vale --config=.vale-test.ini --ext=.md tests/commits/fail/COMMIT_EDITMSG; the
   exit 1
 fi
 
+vale --config=.vale-messages.ini styles/llm-prose-rules styles/llm-prose-rules-commits styles/llm-prose-rules-experimental styles/voice-dna
+
 if command -v pre-commit >/dev/null 2>&1 && pre-commit --version >/dev/null 2>&1; then
   pre-commit run --all-files
 else
