@@ -24,6 +24,25 @@ uv run pre-commit install --hook-type pre-commit --hook-type commit-msg
 
 The pre-commit config runs Vale at `error` level, so warnings do not block commits.
 
+## Use as a Vale package
+
+Add the release asset to another repository's `.vale.ini`:
+
+```ini
+StylesPath = .styles
+Packages = https://github.com/AndreaCovelli/llm-prose-rules/releases/latest/download/llm-prose-rules.zip
+```
+
+Then run:
+
+```bash
+vale sync
+```
+
+The package installs `llm-prose-rules`, `llm-prose-rules-commits`,
+`llm-prose-rules-experimental`, `voice-dna`, and the shared Vale `config/`
+directory.
+
 ## Run checks
 
 ```bash
@@ -51,6 +70,7 @@ If you use `just`:
 
 ```bash
 just test
+just package-release
 ```
 
 ## Rule policy

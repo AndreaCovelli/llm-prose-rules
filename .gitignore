@@ -2,3 +2,4 @@
 .vale/
 .pre-commit-cache/
 .venv/
+dist/

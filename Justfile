@@ -15,5 +15,8 @@ vale-commit-fixtures:
 vale-rule-messages:
   vale --config=.vale-messages.ini styles/llm-prose-rules styles/llm-prose-rules-commits styles/llm-prose-rules-experimental styles/voice-dna
 
+package-release:
+  ./scripts/package-release.sh
+
 pre-commit-install:
   uv run pre-commit install --hook-type pre-commit --hook-type commit-msg
