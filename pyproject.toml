@@ -1,6 +1,6 @@
 [project]
 name = "llm-prose-rules"
-version = "0.1.0"
+version = "0.1.2"
 description = "Vale rules for cleaning up LLM-assisted prose and commit messages."
 requires-python = ">=3.11"
 dependencies = []
