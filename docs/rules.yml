@@ -357,8 +357,8 @@ rules:
     false_positive_risk: 'medium'
     drift_risk: 'medium'
     source: 'Maintainer voice calibration and vocabulary drift review.'
-    last_reviewed: '2026-07-03'
-    rationale: 'Warning-level voice rule for SemicolonUsage; kept non-blocking because vocabulary, punctuation, and personal register are context-sensitive.'
+    last_reviewed: '2026-07-12'
+    rationale: 'Warning-level voice rule for SemicolonUsage; favors a comma and conjunction for natural longer sentences while preserving semicolons and periods when the relationship between clauses calls for them.'
   - path: styles/voice-dna/VerbTricolon.yml
     level: 'warning'
     category: 'voice'
