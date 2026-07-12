@@ -1,0 +1,6 @@
+---
+extends: script
+message: "Possible AI-style participial-clause density: many sentences rely on '-ing' clauses. Vary the syntax or state the causal relationship directly."
+level: warning
+scope: raw
+script: ParticipialClauseDensity.tengo

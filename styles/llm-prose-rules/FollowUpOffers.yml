@@ -1,0 +1,12 @@
+---
+extends: existence
+message: "Assistant follow-up offer leaked into prose: '%s'. End with the content, not an invitation for another prompt."
+level: error
+ignorecase: true
+nonword: true
+tokens:
+  - "Would you like me to [^?\\n]+\\?"
+  - "Let me know if you(?:'d| would) like me to"
+  - "If you(?:'d| would) like, I can"
+  - "I can also [^.!?\\n]+ if you(?:'d| would) like"
+  - "Feel free to ask (?:if|about|for)"

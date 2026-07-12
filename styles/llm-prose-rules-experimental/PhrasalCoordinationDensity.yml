@@ -1,0 +1,6 @@
+---
+extends: script
+message: "Possible AI-style coordination density: many sentences stack phrases with 'and' or 'or'. Split or subordinate ideas when their relationships differ."
+level: warning
+scope: raw
+script: PhrasalCoordinationDensity.tengo

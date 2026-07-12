@@ -1,0 +1,6 @@
+---
+extends: script
+message: "Possible AI-style nominalization density: this passage is unusually noun-heavy. Prefer direct verbs where they make the action clearer."
+level: warning
+scope: raw
+script: NominalizationDensity.tengo

@@ -1,0 +1,31 @@
+text := import("text")
+
+matches := []
+
+clean := text.re_replace("(?s)```.*?```", scope, "")
+clean = text.re_replace("(?s)<!--.*?-->", clean, "")
+clean = text.re_replace(`(?m)^\s*(?:[-*+]|[0-9]+\.)\s+.*$`, clean, "")
+clean = text.re_replace(`(?m)^#{1,6}\s+.*$`, clean, "")
+lowered := text.to_lower(clean)
+
+words := text.re_find(`\b[a-z][a-z'-]*\b`, lowered, -1)
+nominalizations := text.re_find(`\b[a-z]{4,}(?:tion|sion|ment|ance|ence|ity|ness|ship)\b`, lowered, -1)
+word_count := 0
+nominalization_count := 0
+if words != undefined {
+    word_count = len(words)
+}
+if nominalizations != undefined {
+    nominalization_count = len(nominalizations)
+}
+
+if word_count >= 100 && nominalization_count >= 10 {
+    density := (0.0 + nominalization_count) / word_count
+    if density >= 0.08 {
+        first_newline := text.index(scope, "\n")
+        if first_newline < 1 {
+            first_newline = len(scope)
+        }
+        matches = append(matches, {begin: 0, end: first_newline})
+    }
+}

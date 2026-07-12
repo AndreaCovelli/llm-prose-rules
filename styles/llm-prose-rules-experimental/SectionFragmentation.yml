@@ -1,0 +1,6 @@
+---
+extends: script
+message: "Possible AI-style fragmentation: this document has many short sections or repeated list blocks. Consolidate structure where adjacent fragments make one point."
+level: warning
+scope: raw
+script: SectionFragmentation.tengo

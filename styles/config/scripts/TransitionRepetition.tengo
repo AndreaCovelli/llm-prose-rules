@@ -4,6 +4,7 @@ matches := []
 
 // Formal transition phrases to track.
 transitions := [
+    "however",
     "in addition",
     "for instance",
     "for example",

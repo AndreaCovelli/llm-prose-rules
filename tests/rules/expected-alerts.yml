@@ -1,0 +1,295 @@
+"tests/rules/commit-errors/CommitAttribution.md":
+  - check: "llm-prose-rules-commits.CommitAttribution"
+    severity: "error"
+    match: "Generated with Claude Code"
+"tests/rules/commit-errors/CommitBuzzwords.md":
+  - check: "llm-prose-rules-commits.CommitBuzzwords"
+    severity: "error"
+    match: "comprehensive tests"
+"tests/rules/commit-errors/CommitChangelogStyle.md":
+  - check: "llm-prose-rules-commits.CommitChangelogStyle"
+    severity: "error"
+    match: "## Added\n"
+"tests/rules/commit-errors/CommitHedging.md":
+  - check: "llm-prose-rules-commits.CommitHedging"
+    severity: "error"
+    match: "This should fix"
+"tests/rules/commit-errors/CommitOverexplanation.md":
+  - check: "llm-prose-rules-commits.CommitOverexplanation"
+    severity: "error"
+    match: "This is needed because"
+"tests/rules/commit-errors/CommitPastTense.md":
+  - check: "llm-prose-rules-commits.CommitPastTense"
+    severity: "error"
+    match: "Updated"
+"tests/rules/commit-errors/CommitSelfReference.md":
+  - check: "llm-prose-rules-commits.CommitSelfReference"
+    severity: "error"
+    match: "This commit adds"
+"tests/rules/commit-errors/CommitTestEnumeration.md":
+  - check: "llm-prose-rules-commits.CommitTestEnumeration"
+    severity: "error"
+    match: "All tests pass"
+"tests/rules/commit-errors/CommitTrailingJustification.md":
+  - check: "llm-prose-rules-commits.CommitTrailingJustification"
+    severity: "error"
+    match: "ensuring consistency"
+"tests/rules/commit-warnings/CommitEmoji.md":
+  - check: "llm-prose-rules-commits.CommitEmoji"
+    severity: "warning"
+    match: "✨"
+"tests/rules/commit-warnings/CommitFileListing.md":
+  - check: "llm-prose-rules-commits.CommitFileListing"
+    severity: "warning"
+    match: "\n- src/parser.py\n- tests/test_parser.py\n- docs/parser.md\n"
+"tests/rules/commit-warnings/CommitMarketingAdjectives.md":
+  - check: "llm-prose-rules-commits.CommitMarketingAdjectives"
+    severity: "warning"
+    match: "state-of-the-art"
+  - check: "llm-prose-rules-commits.CommitMarketingAdjectives"
+    severity: "warning"
+    match: "world-class"
+  - check: "llm-prose-rules-commits.CommitMarketingAdjectives"
+    severity: "warning"
+    match: "cutting-edge"
+  - check: "llm-prose-rules-commits.CommitMarketingAdjectives"
+    severity: "warning"
+    match: "best-in-class"
+"tests/rules/commit-warnings/CommitUnquantifiedClaims.md":
+  - check: "llm-prose-rules-commits.CommitUnquantifiedClaims"
+    severity: "warning"
+    match: "significantly faster"
+"tests/rules/experimental-pass/ContentDuplication.md": []
+"tests/rules/experimental-pass/NominalizationDensity.md": []
+"tests/rules/experimental-pass/ParagraphLengthVariance.md": []
+"tests/rules/experimental-pass/ParticipialClauseDensity.md": []
+"tests/rules/experimental-pass/PhrasalCoordinationDensity.md":
+  - check: "llm-prose-rules-experimental.SentenceLengthVariance"
+    severity: "warning"
+    match: "The parser reads headers and bodies and trailers before validation begins. The validator checks names and values and source positions against the schema. During recovery, the caller records errors and retry counts and timing data for operators. The formatter preserves spacing and comments and line endings when it writes the result. Maintainers compare speed and memory and allocation counts across supported platforms before release."
+"tests/rules/experimental-pass/SectionFragmentation.md": []
+"tests/rules/experimental-pass/SectionFragmentationLists.md": []
+"tests/rules/experimental-pass/SentenceLengthVariance.md": []
+"tests/rules/experimental-pass/SentenceStartEntropy.md":
+  - check: "llm-prose-rules-experimental.SentenceStartRepetition"
+    severity: "warning"
+    match: "Teams review parser boundaries before approving a release. Teams document ownership rules before merging a patch. Teams inspect failure paths before changing recovery logic. Teams test rollback procedures before deploying to production. Teams update compatibility notes before publishing a version. Teams record performance baselines before claiming an improvement. Reviewers confirm the final checklist before tagging the release."
+"tests/rules/experimental-pass/SentenceStartRepetition.md": []
+"tests/rules/experimental-pass/TransitionRepetition.md": []
+"tests/rules/experimental-pass/TricolonDensityDocument.md": []
+"tests/rules/experimental-warnings/ContentDuplication.md":
+  - check: "llm-prose-rules-experimental.ContentDuplication"
+    severity: "warning"
+    match: "The parser reads every token and validates each token before building a syntax tree."
+"tests/rules/experimental-warnings/NominalizationDensity.md":
+  - check: "llm-prose-rules-experimental.NominalizationDensity"
+    severity: "warning"
+    match: "# Noun-heavy passage"
+  - check: "llm-prose-rules-experimental.SentenceLengthVariance"
+    severity: "warning"
+    match: "The implementation began after detailed configuration and validation of the parser interface. Its classification pipeline required documentation, coordination, and management across several teams responsible for reliability. A later transformation added normalization and compression while preserving compatibility with earlier clients. The organization requested measurement of latency, observation of failures, and identification of every regression before deployment. During evaluation, engineers compared utilization, allocation, and synchronization under realistic traffic from multiple regions. Their investigation produced clarification of ownership and confirmation of the migration sequence for operators. Final verification covered authentication, authorization, isolation, and recovery before publication of the release announcement to downstream maintainers and service owners."
+"tests/rules/experimental-warnings/ParagraphLengthVariance.md":
+  - check: "llm-prose-rules-experimental.ParagraphLengthVariance"
+    severity: "warning"
+    match: "Engineers reviewed the parser design during a focused meeting and documented every boundary, ownership rule, failure mode, recovery path, compatibility promise, and testing obligation before implementation work started on the component.\n\nGardeners prepared the community plots during a cool morning and carefully arranged every seed packet, watering hose, compost bin, path marker, shade cloth, and tool before the neighborhood volunteers arrived.\n\nMusicians rehearsed the chamber program during an evening session and refined every entrance, tempo change, dynamic contrast, page turn, tuning cue, and closing cadence before the public performance finally began.\n\nResearchers surveyed the coastal habitat during a spring expedition and recorded every bird call, tide level, plant sample, weather shift, nesting site, and shoreline change before returning to the laboratory."
+"tests/rules/experimental-warnings/ParticipialClauseDensity.md":
+  - check: "llm-prose-rules-experimental.ParticipialClauseDensity"
+    severity: "warning"
+    match: "# Participial clauses"
+"tests/rules/experimental-warnings/PhrasalCoordinationDensity.md":
+  - check: "llm-prose-rules-experimental.PhrasalCoordinationDensity"
+    severity: "warning"
+    match: "# Coordinated phrases"
+  - check: "llm-prose-rules-experimental.SentenceLengthVariance"
+    severity: "warning"
+    match: "The parser reads headers and bodies and trailers before validation begins. The validator checks names and values and source positions against the schema. During recovery, the caller records errors and retry counts and timing data for operators. The formatter preserves spacing and comments and line endings when it writes the result. Maintainers compare speed and memory and allocation counts across supported platforms before release. Finally, reviewers inspect documentation and migration notes and rollback steps with downstream owners before approving the change."
+  - check: "llm-prose-rules-experimental.SentenceStartRepetition"
+    severity: "warning"
+    match: "The parser reads headers and bodies and trailers before validation begins. The validator checks names and values and source positions against the schema. During recovery, the caller records errors and retry counts and timing data for operators. The formatter preserves spacing and comments and line endings when it writes the result. Maintainers compare speed and memory and allocation counts across supported platforms before release. Finally, reviewers inspect documentation and migration notes and rollback steps with downstream owners before approving the change."
+"tests/rules/experimental-warnings/SectionFragmentation.md":
+  - check: "llm-prose-rules-experimental.SectionFragmentation"
+    severity: "warning"
+    match: "# Fragmented guide"
+"tests/rules/experimental-warnings/SectionFragmentationLists.md":
+  - check: "llm-prose-rules-experimental.SectionFragmentation"
+    severity: "warning"
+    match: "# Repeated list blocks"
+"tests/rules/experimental-warnings/SentenceLengthVariance.md":
+  - check: "llm-prose-rules-experimental.SentenceLengthVariance"
+    severity: "warning"
+    match: "Engineers review parser boundaries before they approve changes to the public interface. Maintainers document ownership rules before they merge patches into the stable branch. Reviewers inspect failure paths before they accept revisions to the recovery logic. Operators test rollback procedures before they deploy releases into the production environment. Authors update compatibility notes before they publish a new version for downstream users."
+"tests/rules/experimental-warnings/SentenceStartEntropy.md":
+  - check: "llm-prose-rules-experimental.SentenceStartEntropy"
+    severity: "warning"
+    match: "Teams review parser boundaries before approving a release. Teams document ownership rules before merging a patch. Teams inspect failure paths before changing recovery logic. Teams test rollback procedures before deploying to production. Teams update compatibility notes before publishing a version. Teams record performance baselines before claiming an improvement. Teams verify migration steps before removing old behavior. Reviewers confirm the final checklist before tagging the release."
+  - check: "llm-prose-rules-experimental.SentenceStartRepetition"
+    severity: "warning"
+    match: "Teams review parser boundaries before approving a release. Teams document ownership rules before merging a patch. Teams inspect failure paths before changing recovery logic. Teams test rollback procedures before deploying to production. Teams update compatibility notes before publishing a version. Teams record performance baselines before claiming an improvement. Teams verify migration steps before removing old behavior. Reviewers confirm the final checklist before tagging the release."
+"tests/rules/experimental-warnings/SentenceStartRepetition.md":
+  - check: "llm-prose-rules-experimental.SentenceStartRepetition"
+    severity: "warning"
+    match: "Teams review parser boundaries before approving releases. Teams document ownership rules before merging patches. Teams inspect failure paths before changing recovery logic. Reviewers test rollback procedures before deploying to production. Authors update compatibility notes before publishing versions. Operators record performance baselines before claiming improvements."
+"tests/rules/experimental-warnings/TransitionRepetition.md":
+  - check: "llm-prose-rules-experimental.TransitionRepetition"
+    severity: "warning"
+    match: "However, the parser rejects an empty token. However, the scanner reports an invalid byte. However, the formatter preserves the original line number."
+"tests/rules/experimental-warnings/TricolonDensityDocument.md":
+  - check: "llm-prose-rules-experimental.TricolonDensityDocument"
+    severity: "warning"
+    match: "# Repeated tricolons"
+"tests/rules/prose-errors/AIIdentity.md":
+  - check: "llm-prose-rules.AIIdentity"
+    severity: "error"
+    match: "As an AI language model"
+"tests/rules/prose-errors/ClosingPleasantries.md":
+  - check: "llm-prose-rules.ClosingPleasantries"
+    severity: "error"
+    match: "I hope this helps"
+"tests/rules/prose-errors/ConclusionMarkers.md":
+  - check: "llm-prose-rules.ConclusionMarkers"
+    severity: "error"
+    match: "In conclusion"
+"tests/rules/prose-errors/ContrastiveFormulas.md":
+  - check: "llm-prose-rules.ContrastiveFormulas"
+    severity: "warning"
+    match: "It's not just a parser, it's a verifier"
+"tests/rules/prose-errors/DraftPlaceholders.md":
+  - check: "llm-prose-rules.DraftPlaceholders"
+    severity: "error"
+    match: "[Insert benchmark results here]"
+"tests/rules/prose-errors/FillerPhrases.md":
+  - check: "llm-prose-rules.FillerPhrases"
+    severity: "error"
+    match: "due to the fact that"
+"tests/rules/prose-errors/FollowUpOffers.md":
+  - check: "llm-prose-rules.FollowUpOffers"
+    severity: "error"
+    match: "Would you like me to add more examples?"
+"tests/rules/prose-errors/ListIntroductions.md":
+  - check: "llm-prose-rules.ListIntroductions"
+    severity: "error"
+    match: "Below you'll find"
+"tests/rules/prose-errors/Metacommentary.md":
+  - check: "llm-prose-rules.Metacommentary"
+    severity: "error"
+    match: "Let me explain"
+"tests/rules/prose-errors/OpeningCliches.md":
+  - check: "llm-prose-rules.OpeningCliches"
+    severity: "error"
+    match: "In today's digital age"
+"tests/rules/prose-errors/ParticipialPadding.md":
+  - check: "llm-prose-rules.ParticipialPadding"
+    severity: "error"
+    match: "highlighting its importance"
+"tests/rules/prose-errors/ResponseCutoffs.md":
+  - check: "llm-prose-rules.ResponseCutoffs"
+    severity: "error"
+    match: "I've reached my token limit"
+"tests/rules/prose-errors/ServesAsDodge.md":
+  - check: "llm-prose-rules.ServesAsDodge"
+    severity: "warning"
+    match: "serves as a"
+"tests/rules/prose-errors/StructureAnnouncements.md":
+  - check: "llm-prose-rules.StructureAnnouncements"
+    severity: "error"
+    match: "key takeaway"
+"tests/rules/prose-errors/SycophancyMarkers.md":
+  - check: "llm-prose-rules.SycophancyMarkers"
+    severity: "error"
+    match: "Great question"
+"tests/rules/prose-errors/UnpackExplore.md":
+  - check: "llm-prose-rules.UnpackExplore"
+    severity: "error"
+    match: "Let's walk through"
+"tests/rules/prose-errors/VagueAttributions.md":
+  - check: "llm-prose-rules.VagueAttributions"
+    severity: "error"
+    match: "Experts argue"
+"tests/rules/regressions/ContextSensitivity.md":
+  - check: "voice-dna.ConclusionTransitions"
+    severity: "warning"
+    match: "Overall,"
+  - check: "voice-dna.WordyPhrases"
+    severity: "warning"
+    match: "is able to"
+  - check: "voice-dna.AffirmationMarkers"
+    severity: "warning"
+    match: "Of course,"
+  - check: "voice-dna.WordyPhrases"
+    severity: "warning"
+    match: "In order to"
+  - check: "llm-prose-rules.ServesAsDodge"
+    severity: "warning"
+    match: "serves as a"
+  - check: "llm-prose-rules.ContrastiveFormulas"
+    severity: "warning"
+    match: "Not only does this prevent data loss, but it also preserves ordering"
+  - check: "voice-dna.WordyPhrases"
+    severity: "warning"
+    match: "Numerous"
+  - check: "voice-dna.WordyPhrases"
+    severity: "warning"
+    match: "tends to"
+"tests/rules/voice-warnings/AIAdjectiveNounPairs.md":
+  - check: "voice-dna.AIAdjectiveNounPairs"
+    severity: "warning"
+    match: "seamless workflow"
+  - check: "voice-dna.OverusedVocabulary"
+    severity: "warning"
+    match: "seamless"
+"tests/rules/voice-warnings/AffirmationMarkers.md":
+  - check: "voice-dna.AffirmationMarkers"
+    severity: "warning"
+    match: "Of course,"
+"tests/rules/voice-warnings/ConclusionTransitions.md":
+  - check: "voice-dna.ConclusionTransitions"
+    severity: "warning"
+    match: "Overall,"
+"tests/rules/voice-warnings/EmDashUsage.md":
+  - check: "voice-dna.EmDashUsage"
+    severity: "warning"
+    match: "—"
+"tests/rules/voice-warnings/FormalRegister.md":
+  - check: "voice-dna.FormalRegister"
+    severity: "warning"
+    match: "utilize"
+"tests/rules/voice-warnings/FormulaicHeadings.md":
+  - check: "voice-dna.FormulaicHeadings"
+    severity: "warning"
+    match: "## Key Takeaways"
+"tests/rules/voice-warnings/FramingPhrases.md":
+  - check: "voice-dna.FramingPhrases"
+    severity: "warning"
+    match: "This parser matters."
+"tests/rules/voice-warnings/FutureOutlook.md":
+  - check: "voice-dna.FutureOutlook"
+    severity: "warning"
+    match: "Despite these challenges"
+"tests/rules/voice-warnings/InlineBoldHeadings.md":
+  - check: "voice-dna.InlineBoldHeadings"
+    severity: "warning"
+    match: "- **Parser:** "
+"tests/rules/voice-warnings/OverusedVocabulary.md":
+  - check: "voice-dna.OverusedVocabulary"
+    severity: "warning"
+    match: "robust"
+"tests/rules/voice-warnings/OverusedVocabularyVerbs.md":
+  - check: "voice-dna.OverusedVocabularyVerbs"
+    severity: "warning"
+    match: "showcases"
+"tests/rules/voice-warnings/RestatementMarkers.md":
+  - check: "voice-dna.RestatementMarkers"
+    severity: "warning"
+    match: "In other words"
+"tests/rules/voice-warnings/SemicolonUsage.md":
+  - check: "voice-dna.SemicolonUsage"
+    severity: "warning"
+    match: "; the formatter emits output."
+"tests/rules/voice-warnings/VerbTricolon.md":
+  - check: "voice-dna.VerbTricolon"
+    severity: "warning"
+    match: "parses input, validates fields, and formats output"
+"tests/rules/voice-warnings/WordyPhrases.md":
+  - check: "voice-dna.WordyPhrases"
+    severity: "warning"
+    match: "is able to"

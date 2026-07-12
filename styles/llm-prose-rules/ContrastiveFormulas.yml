@@ -1,7 +1,7 @@
 ---
 extends: existence
-message: "LLM-style contrast: '%s'. State the positive claim directly without the 'not X, but Y' formula."
-level: error
+message: "Possible formulaic contrast: '%s'. Keep it when the distinction is necessary; otherwise state the positive claim directly."
+level: warning
 tokens:
   # "It's not just X; it's Y" patterns
   - "[Ii]t'?s not just [^;,—:]+[;,—:] it'?s [^.!?]+"

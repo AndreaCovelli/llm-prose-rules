@@ -1,0 +1,12 @@
+---
+extends: existence
+message: "Possible canned affirmation: '%s'. Keep it only when the emphasis is intentional."
+level: warning
+ignorecase: true
+nonword: true
+scope: sentence
+tokens:
+  - "^Absolutely(?:[,.!]|$)"
+  - "^Certainly(?:[,.!]|$)"
+  - "^Of course(?:[,.!]|$)"
+  - "^Without a doubt(?:[,.!]|$)"

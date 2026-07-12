@@ -1,0 +1,67 @@
+text := import("text")
+
+matches := []
+
+clean := text.re_replace("(?s)```.*?```", scope, "")
+clean = text.re_replace("(?s)<!--.*?-->", clean, "")
+
+lines := text.split(clean, "\n")
+heading_count := 0
+list_item_count := 0
+list_run_count := 0
+in_list := false
+prose_lines := []
+
+for line in lines {
+    trimmed := text.trim_space(line)
+    is_heading := text.re_match(`^#{1,6}\s+`, trimmed)
+    is_list_item := text.has_prefix(trimmed, "- ") || text.has_prefix(trimmed, "* ") || text.has_prefix(trimmed, "+ ") || text.re_match(`^[0-9]+\.\s+`, trimmed)
+
+    if is_heading {
+        heading_count += 1
+        if in_list {
+            list_run_count += 1
+            in_list = false
+        }
+        continue
+    }
+
+    if is_list_item {
+        list_item_count += 1
+        in_list = true
+        continue
+    }
+
+    if in_list {
+        list_run_count += 1
+        in_list = false
+    }
+    if trimmed != "" {
+        prose_lines = append(prose_lines, trimmed)
+    }
+}
+
+if in_list {
+    list_run_count += 1
+}
+
+prose := text.join(prose_lines, " ")
+sentences := text.re_split(`[.!?]+\s*`, prose)
+sentence_count := 0
+for sentence in sentences {
+    words := text.re_split(`\s+`, text.trim_space(sentence))
+    if len(words) >= 3 {
+        sentence_count += 1
+    }
+}
+
+short_sections := heading_count >= 6 && sentence_count < heading_count * 2
+list_heavy := list_item_count >= 12 && list_run_count >= 3 && list_item_count > sentence_count * 2
+
+if short_sections || list_heavy {
+    first_newline := text.index(scope, "\n")
+    if first_newline < 1 {
+        first_newline = len(scope)
+    }
+    matches = append(matches, {begin: 0, end: first_newline})
+}

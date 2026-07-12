@@ -8,9 +8,9 @@ It is not an AI detector. It does not produce an authorship score. It flags patt
 
 ```text
 styles/
-  llm-prose-rules/              # blocking prose cleanup rules
-  llm-prose-rules-commits/      # blocking commit-message rules
-  voice-dna/                    # warning-level personal taste rules
+  llm-prose-rules/              # core prose cleanup rules (errors and warnings)
+  llm-prose-rules-commits/      # commit-message rules (errors and warnings)
+  voice-dna/                    # context-sensitive advisory style rules
   llm-prose-rules-experimental/ # opt-in structural checks
 ```
 
@@ -49,6 +49,8 @@ directory.
 uv run ./scripts/test.sh
 uv run python scripts/check-rule-fixtures.py
 uv run python scripts/check-metadata.py
+./scripts/package-release.sh
+./scripts/check-package-parity.sh
 vale --config=.vale-messages.ini styles/llm-prose-rules styles/llm-prose-rules-commits styles/llm-prose-rules-experimental styles/voice-dna
 vale --config=.vale.ini .
 vale --config=.vale.ini --ext=.md --minAlertLevel=error .git/COMMIT_EDITMSG
@@ -64,7 +66,9 @@ vale --config=.vale-experimental.ini .
 ```
 
 The experimental profile adds structural warning rules. Treat those results as
-review prompts, not merge blockers.
+review prompts, not merge blockers. Its grammar-density and structure thresholds
+are calibrated for technical prose; recalibrate them against a representative
+local corpus before using them for another genre.
 
 If you use `just`:
 
@@ -75,9 +79,13 @@ just package-release
 
 ## Rule policy
 
-Hard-fail rules should catch high-confidence patterns: generic openings, filler, metacommentary, fake conclusions, chat leakage, contrast formulas, vague attributions, and commit-message boilerplate.
+Hard-fail rules should catch high-confidence patterns: generic openings, directly
+removable filler, conversational metacommentary, explicit conclusions, chat
+leakage, vague attributions, and commit-message boilerplate.
 
-Warning rules cover context-sensitive choices such as broad vocabulary, punctuation, rhythm, and personal voice.
+Warning rules cover context-sensitive choices such as contrast formulas, copula
+alternatives, generic transitions, broad vocabulary, punctuation, rhythm, and
+personal voice.
 
 Rule calibration lives in `docs/rules.yml`. Review process notes live in
 `docs/calibration.md`.

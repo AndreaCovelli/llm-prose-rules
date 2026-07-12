@@ -1,0 +1,13 @@
+---
+extends: existence
+message: "Possible canned outlook language: '%s'. Replace it with a concrete limitation, next step, or forecast."
+level: warning
+ignorecase: true
+tokens:
+  - Despite these challenges
+  - While challenges remain
+  - Looking ahead
+  - Future outlook
+  - Challenges and opportunities
+  - Challenges and future directions
+  - The road ahead

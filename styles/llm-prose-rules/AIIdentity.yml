@@ -1,0 +1,12 @@
+---
+extends: existence
+message: "AI self-reference leaked into prose: '%s'. Remove the assistant disclaimer and state the relevant limitation directly."
+level: error
+ignorecase: true
+nonword: true
+tokens:
+  - "As an AI (?:language )?model"
+  - "As an AI assistant"
+  - "I(?: am|'m) an AI (?:language )?model"
+  - "I(?: am|'m) an AI assistant"
+  - "I (?:do not|don't) have (?:personal )?(?:opinions|feelings|experiences|consciousness)"

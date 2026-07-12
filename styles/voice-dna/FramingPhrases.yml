@@ -1,0 +1,29 @@
+---
+extends: existence
+message: "Possible formulaic framing: '%s'. Keep it only when it helps the reader navigate the argument."
+level: warning
+nonword: true
+scope: raw
+tokens:
+  - "This \\w+ matters\\."
+  - "This \\w+ \\w+ matters\\."
+  - "This \\w+ \\w+ \\w+ matters\\."
+  - "This matters because"
+  - "This is important because"
+  - "This (?:distinction|difference|framing|choice|detail|nuance|subtlety) matters"
+  - "The (?:key|point|idea|insight|takeaway) here is"
+  - "The important thing here is"
+  - "It'?s worth (?:noting|mentioning|pointing out|emphasizing|highlighting|remembering)"
+  - "\\*\\*(?:Key insight|Key takeaway|Key point|Important|Note|Bottom line|The point):?\\*\\*"
+  - "This is the (?:insight|key|point|takeaway|crucial|critical|important)"
+  - "Understanding [^.\\n]+(?:enables you to|helps you|allows you to) [^.\\n]+\\."
+  - "Real-world [a-z]+"
+  - "In the real world"
+  - "At (?:its|their) (?:core|heart|simplest)"
+  - "At its most (?:basic|fundamental)(?: level)?"
+  - "Think of (?:it|this) as"
+  - "Think of [^.\\n]+as [^.\\n]+\\."
+  - "This is where [^.\\n]+ comes in"
+  - "That'?s where [^.\\n]+ comes in"
+  - "What makes this particularly [a-z]+ is"
+  - "The implications here are"

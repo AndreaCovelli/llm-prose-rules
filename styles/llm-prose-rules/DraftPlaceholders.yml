@@ -1,0 +1,10 @@
+---
+extends: existence
+message: "Draft placeholder leaked into prose: '%s'. Replace it with finished content."
+level: error
+ignorecase: true
+nonword: true
+tokens:
+  - "\\[(?:insert|add|describe|summarize|expand on) [^\\n]{1,80}\\]"
+  - "<(?:insert|add|describe|summarize|expand on) [^\\n>]{1,80}>"
+  - "\\{\\{(?:insert|add|describe|summarize|expand on) [^\\n}]{1,80}\\}\\}"

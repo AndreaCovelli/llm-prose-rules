@@ -1,0 +1,40 @@
+text := import("text")
+
+matches := []
+
+clean := text.re_replace("(?s)```.*?```", scope, "")
+clean = text.re_replace("(?s)<!--.*?-->", clean, "")
+clean = text.re_replace(`(?m)^\s*(?:[-*+]|[0-9]+\.)\s+.*$`, clean, "")
+clean = text.re_replace(`(?m)^#{1,6}\s+.*$`, clean, "")
+flat := text.re_replace(`\s+`, clean, " ")
+flat = text.trim_space(flat)
+
+sentences := text.re_split(`[.!?]+\s*`, flat)
+sentence_count := 0
+for sentence in sentences {
+    words := text.re_split(`\s+`, text.trim_space(sentence))
+    if len(words) >= 3 {
+        sentence_count += 1
+    }
+}
+
+initial := text.re_find(`(?i)(?:^|[.!?]\s+)[a-z]+ing\s+[^.!?]{1,100},`, flat, -1)
+trailing := text.re_find(`(?i),\s+(?:thereby\s+)?[a-z]+ing\b`, flat, -1)
+clause_count := 0
+if initial != undefined {
+    clause_count += len(initial)
+}
+if trailing != undefined {
+    clause_count += len(trailing)
+}
+
+if sentence_count >= 6 && clause_count >= 4 {
+    density := (0.0 + clause_count) / sentence_count
+    if density >= 0.40 {
+        first_newline := text.index(scope, "\n")
+        if first_newline < 1 {
+            first_newline = len(scope)
+        }
+        matches = append(matches, {begin: 0, end: first_newline})
+    }
+}

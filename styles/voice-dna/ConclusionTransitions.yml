@@ -1,0 +1,11 @@
+---
+extends: existence
+message: "Possible formulaic conclusion transition: '%s'. Keep it only when it clarifies the argument."
+level: warning
+ignorecase: true
+nonword: true
+scope: sentence
+tokens:
+  - "^Ultimately,"
+  - "^Overall,"
+  - "^On the whole,"

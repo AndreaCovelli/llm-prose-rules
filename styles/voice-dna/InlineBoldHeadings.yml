@@ -1,0 +1,7 @@
+---
+extends: existence
+message: "Possible AI-style inline heading: '%s'. Use a real heading or a plain list item when the label adds no structure."
+level: warning
+scope: raw
+raw:
+  - '(?m)^\s*(?:[-*+]|[0-9]+\.)\s+\*\*[^*\n]{2,60}:?\*\*(?:\s+|$)'

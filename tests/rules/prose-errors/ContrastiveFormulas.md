@@ -1,1 +1,1 @@
-It's not just a parser; it's a verifier.
+It's not just a parser, it's a verifier.

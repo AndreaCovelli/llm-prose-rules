@@ -3,10 +3,6 @@ extends: existence
 message: "LLM-style commit tell: '%s'. State what changed and why, not marketing copy."
 level: warning
 ignorecase: true
-# The hyphenated forms 'state-of-the-art', 'best-in-class', 'world-class',
-# and 'cutting-edge' are intentionally omitted — ai-tells.OverusedVocabulary
-# and ai-tells.AICompoundPhrases already cover them, and the README directs
-# users to layer both styles on commit messages.
 tokens:
   - production-ready
   - production ready
@@ -15,9 +11,13 @@ tokens:
   - mission-critical
   - mission critical
   - world class
+  - world-class
   - state of the art
+  - state-of-the-art
   - cutting edge
+  - cutting-edge
   - best in class
+  - best-in-class
   - industry-standard
   - industry standard
   - battle-tested

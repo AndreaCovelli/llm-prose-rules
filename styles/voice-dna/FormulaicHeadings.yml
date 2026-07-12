@@ -1,0 +1,7 @@
+---
+extends: existence
+message: "Possible formulaic heading: '%s'. Name the section after its specific subject."
+level: warning
+scope: raw
+raw:
+  - '(?mi)^#{1,6}[ \t]+(?:key takeaways?|conclusion|final thoughts|challenges and opportunities|challenges and future directions|future outlook|the road ahead|why it matters|the bottom line)[ \t]*#*[ \t]*$'

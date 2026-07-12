@@ -1,0 +1,12 @@
+---
+extends: existence
+message: "Assistant cutoff leaked into prose: '%s'. Restore the missing content or remove the cutoff notice."
+level: error
+ignorecase: true
+nonword: true
+tokens:
+  - "I(?:'ve| have) reached (?:the|my) (?:token|character|message|response|length) limit"
+  - "Due to (?:the )?(?:token|character|message|response|length) limit, I"
+  - "I(?:'ll| will) continue (?:in|with) (?:the )?(?:next|another) (?:message|response)"
+  - "\\[(?:response|answer) truncated\\]"
+  - "I (?:cannot|can't) continue (?:because of|due to) (?:the )?(?:token|character|length) limit"
