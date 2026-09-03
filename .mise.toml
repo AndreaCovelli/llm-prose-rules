@@ -1,5 +1,4 @@
 [tools]
-python = "latest"
 "aqua:astral-sh/uv" = "latest"
 "aqua:vale-cli/vale" = "latest"
 "aqua:casey/just" = "latest"
